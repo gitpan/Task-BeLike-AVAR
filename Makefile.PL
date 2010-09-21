@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
- BEGIN { require v5.10.0; } 
+BEGIN { require v5.10.0; }
 
 use ExtUtils::MakeMaker 6.31;
 
@@ -11,7 +11,11 @@ use ExtUtils::MakeMaker 6.31;
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'Be the most AVAR you can be',
   'AUTHOR' => 'Ævar Arnfjörð Bjarmason <avar@cpan.org>',
-  'BUILD_REQUIRES' => {},
+  'BUILD_REQUIRES' => {
+    'File::Find' => '0',
+    'File::Temp' => '0',
+    'Test::More' => '0'
+  },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
   },
@@ -46,10 +50,9 @@ my %WriteMakefileArgs = (
     'Test::Expect' => '0',
     'Test::Synopsis' => '0',
     'WWW::Mechanize' => '0',
-    'YAML::Syck' => '0',
-    'perl5i' => '0'
+    'YAML::Syck' => '0'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }
@@ -58,10 +61,10 @@ my %WriteMakefileArgs = (
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
-  my $pp = $WriteMakefileArgs{PREREQ_PM}; 
+  my $pp = $WriteMakefileArgs{PREREQ_PM};
   for my $mod ( keys %$br ) {
     if ( exists $pp->{$mod} ) {
-      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod}; 
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod};
     }
     else {
       $pp->{$mod} = $br->{$mod};

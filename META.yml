@@ -2,18 +2,20 @@
 abstract: 'Be the most AVAR you can be'
 author:
   - 'Ævar Arnfjörð Bjarmason <avar@cpan.org>'
+build_requires:
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 3.101400, CPAN::Meta::Converter version 2.101390'
+generated_by: 'Dist::Zilla version 4.102340, CPAN::Meta::Converter version 2.102400'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Task-BeLike-AVAR
-no_index:
-  directory:
-    - t
+no_index: {}
 requires:
   Any::Moose: 0
   App::Nopaste: 0
@@ -43,11 +45,10 @@ requires:
   WWW::Mechanize: 0
   YAML::Syck: 0
   perl: v5.10.0
-  perl5i: 0
 resources:
-  Ratings: http://cpanratings.perl.org/d/Task-BeLike-AVAR
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-AVAR
   homepage: http://search.cpan.org/dist/Task-BeLike-AVAR/
   license: http://dev.perl.org/licenses/
-  repository: http://github.com/avar/task-belike-avar
-version: 0.01
+  repository: git://github.com/avar/task-belike-avar.git
+version: 0.02
+x_authority: cpan:AVAR

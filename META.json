@@ -4,18 +4,16 @@
       "\u00c3\u0086var Arnfj\u00c3\u00b6r\u00c3\u00b0 Bjarmason <avar@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 3.101400",
-   "license" : "perl_5",
+   "generated_by" : "Dist::Zilla version 4.102340, CPAN::Meta::Converter version 2.102400",
+   "license" : [
+      "perl_5"
+   ],
    "meta-spec" : {
-      "url" : "http://github.com/dagolden/cpan-meta/",
-      "version" : 2
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
    },
    "name" : "Task-BeLike-AVAR",
-   "no_index" : {
-      "directory" : [
-         "t"
-      ]
-   },
+   "no_index" : {},
    "prereqs" : {
       "configure" : {
          "requires" : {
@@ -24,56 +22,61 @@
       },
       "runtime" : {
          "requires" : {
-            "Any::Moose" : "0",
-            "App::Nopaste" : "0",
-            "App::Nopaste::Service::Linode" : "0",
-            "App::QuoteCC" : "0",
-            "Bot::Training" : "0",
-            "Bot::Training::MegaHAL" : "0",
-            "Bot::Training::StarCraft" : "0",
-            "Bot::Twatterhose" : "0",
-            "Business::IS::PIN" : "0",
-            "Crypt::CVS" : "0",
-            "DBD::Pg" : "0",
-            "DBD::mysql" : "0",
-            "Digest::Whirlpool" : "0",
-            "Dist::Zilla::PluginBundle::AVAR" : "0",
-            "Hailo" : "0",
-            "MediaWiki::USERINFO" : "0",
-            "Moose" : "0",
-            "MooseX::Getopt" : "0",
-            "Mouse" : "0",
-            "MouseX::Getopt" : "0",
-            "Software::License::DWTFYWWI" : "0",
-            "Taint::Util" : "0",
-            "Task::Bot::Training" : "0",
-            "Test::Expect" : "0",
-            "Test::Synopsis" : "0",
-            "WWW::Mechanize" : "0",
-            "YAML::Syck" : "0",
-            "perl" : "v5.10.0",
-            "perl5i" : "0"
+            "Any::Moose" : 0,
+            "App::Nopaste" : 0,
+            "App::Nopaste::Service::Linode" : 0,
+            "App::QuoteCC" : 0,
+            "Bot::Training" : 0,
+            "Bot::Training::MegaHAL" : 0,
+            "Bot::Training::StarCraft" : 0,
+            "Bot::Twatterhose" : 0,
+            "Business::IS::PIN" : 0,
+            "Crypt::CVS" : 0,
+            "DBD::Pg" : 0,
+            "DBD::mysql" : 0,
+            "Digest::Whirlpool" : 0,
+            "Dist::Zilla::PluginBundle::AVAR" : 0,
+            "Hailo" : 0,
+            "MediaWiki::USERINFO" : 0,
+            "Moose" : 0,
+            "MooseX::Getopt" : 0,
+            "Mouse" : 0,
+            "MouseX::Getopt" : 0,
+            "Software::License::DWTFYWWI" : 0,
+            "Taint::Util" : 0,
+            "Task::Bot::Training" : 0,
+            "Test::Expect" : 0,
+            "Test::Synopsis" : 0,
+            "WWW::Mechanize" : 0,
+            "YAML::Syck" : 0,
+            "perl" : "v5.10.0"
          }
       },
       "test" : {
          "requires" : {
-            "File::Find" : "0",
-            "File::Temp" : "0",
-            "Test::More" : "0"
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Test::More" : 0
          }
       }
    },
+   "release_status" : "stable",
    "resources" : {
-      "Ratings" : "http://cpanratings.perl.org/d/Task-BeLike-AVAR",
       "bugtracker" : {
+         "mailto" : "bug-Task-BeLike-AVAR@rt.cpan.org",
          "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-AVAR"
       },
       "homepage" : "http://search.cpan.org/dist/Task-BeLike-AVAR/",
-      "license" : "http://dev.perl.org/licenses/",
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
       "repository" : {
-         "url" : "http://github.com/avar/task-belike-avar"
+         "type" : "git",
+         "url" : "git://github.com/avar/task-belike-avar.git",
+         "web" : "http://github.com/avar/task-belike-avar"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02",
+   "x_authority" : "cpan:AVAR"
 }
 

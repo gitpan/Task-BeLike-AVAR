@@ -1,6 +1,9 @@
 package Task::BeLike::AVAR;
 BEGIN {
-  $Task::BeLike::AVAR::VERSION = '0.01';
+  $Task::BeLike::AVAR::AUTHORITY = 'cpan:AVAR';
+}
+BEGIN {
+  $Task::BeLike::AVAR::VERSION = '0.02';
 }
 use v5.10.0;
 
@@ -15,7 +18,6 @@ use MooseX::Getopt ();
 
 use App::Nopaste ();
 use WWW::Mechanize ();
-use perl5i ();
 
 # My modules
 use App::Nopaste::Service::Linode ();
